@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewel ❤️ Rhen — 10 Months of Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Audio -->
+    <audio id="bgMusic" loop>
+        <source src="assets/music/background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <div class="scrapbook-container">
+        <!-- Page 1: Love Envelope -->
+        <section class="page page-1" id="page1">
+            <div class="envelope-wrapper">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-front">
+                        <div class="envelope-flap"></div>
+                        <div class="envelope-body">
+                            <div class="rose-petals">
+                                <span class="petal">🌹</span>
+                                <span class="petal">🌹</span>
+                                <span class="petal">🌹</span>
+                                <span class="petal">🌹</span>
+                                <span class="petal">🌹</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="letter-content" id="letterContent">
+                    <p>💌</p>
+                    <p>To My Dearest Mahal,</p>
+                    <p>A special letter awaits you...</p>
+                    <button class="tap-btn" id="tapBtn">Tap to Open ❤️</button>
+                </div>
+            </div>
+            <div class="music-btn" id="musicBtn" style="display:none;" title="Toggle Music">
+                <span id="musicIcon">🔊</span>
+            </div>
+            <nav class="page-nav">
+                <button class="nav-btn next-btn" onclick="goToPage(2)">↓</button>
+            </nav>
+        </section>
+
+        <!-- Page 2: Our Story Begins -->
+        <section class="page page-2" id="page2">
+            <div class="story-container">
+                <img src="assets/photos/photo-1.jpg" alt="Our Story" class="story-image" onerror="this.src='https://via.placeholder.com/800x600?text=Jewel+%26+Rhen'">
+                <div class="story-overlay">
+                    <h1 class="story-title">Jewel ❤️ Rhen</h1>
+                    <h2 class="story-subtitle">Happy 10th Monthsary</h2>
+                    <p class="story-date">August 20, 2025</p>
+                    <p class="story-quote">Every love story is beautiful,<br>but ours is my favorite.</p>
+                </div>
+            </div>
+            <nav class="page-nav">
+                <button class="nav-btn prev-btn" onclick="goToPage(1)">↑</button>
+                <button class="nav-btn next-btn" onclick="goToPage(3)">↓</button>
+            </nav>
+        </section>
+
+        <!-- Page 3: Scrapbook Memory Book -->
+        <section class="page page-3" id="page3">
+            <h2 class="page-title">Our Scrapbook</h2>
+            <div class="scrapbook-grid">
+                <div class="memory-card" style="--delay: 0s;">
+                    <div class="polaroid">
+                        <img src="assets/photos/photo-2.jpg" alt="Memory 1" onerror="this.src='https://via.placeholder.com/300x300?text=Memory+1'">
+                        <p class="caption">📸 The Day You Made Me Smile</p>
+                    </div>
+                </div>
+                <div class="memory-card" style="--delay: 0.2s;">
+                    <div class="polaroid">
+                        <img src="assets/photos/photo-3.jpg" alt="Memory 2" onerror="this.src='https://via.placeholder.com/300x300?text=Memory+2'">
+                        <p class="caption">📸 Favorite Date Together</p>
+                    </div>
+                </div>
+                <div class="memory-card" style="--delay: 0.4s;">
+                    <div class="polaroid">
+                        <img src="assets/photos/photo-4.jpg" alt="Memory 3" onerror="this.src='https://via.placeholder.com/300x300?text=Memory+3'">
+                        <p class="caption">📸 My Safe Place</p>
+                    </div>
+                </div>
+                <div class="memory-card" style="--delay: 0.6s;">
+                    <div class="polaroid">
+                        <img src="assets/photos/photo-5.jpg" alt="Memory 4" onerror="this.src='https://via.placeholder.com/300x300?text=Memory+4'">
+                        <p class="caption">📸 The Look I'll Never Forget</p>
+                    </div>
+                </div>
+            </div>
+            <nav class="page-nav">
+                <button class="nav-btn prev-btn" onclick="goToPage(2)">↑</button>
+                <button class="nav-btn next-btn" onclick="goToPage(4)">↓</button>
+            </nav>
+        </section>
+
+        <!-- Page 4-7: Rest of pages... -->
+        (See previous files for full content)
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
